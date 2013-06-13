@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample app</title>
+    <link rel="stylesheet" href="two_components_one_model.css">
+    
+    <!-- import the click-counter -->
+    <link rel="import" href="turn_on.html">
+    <link rel="import" href="turn_off.html">
+  </head>
+  <body>
+    <h1>Two components, one model</h1>
+    
+    <div is="turn-on" toggle="{{toggle}}"></div>
+    <div is="turn-off" toggle="{{toggle}}"></div>
+    
+    <p>The toggle is set to {{toggle.status}}</p>
+
+    <script type="application/dart" src="two_components_one_model.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
